@@ -1,0 +1,26 @@
+{
+	"name": "jisy-revamped",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JeaneC/website-revamp.git"
+	},
+	"author": "Jeane Carlos",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/JeaneC/website-revamp/issues"
+	},
+	"homepage": "https://github.com/JeaneC/website-revamp#readme",
+	"dependencies": {
+		"next": "^5.1.0",
+		"react": "^16.3.1",
+		"react-dom": "^16.3.1"
+	}
+}
