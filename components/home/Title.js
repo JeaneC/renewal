@@ -16,7 +16,7 @@ const Style = () => (
 			justify-content: center;
 			align-items: center;
 			height: 35vh;
-			font-size: 3em;
+			font-size: 2.7em;
 			color: ${darkerGrey};
 		}
 	`}</style>

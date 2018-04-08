@@ -1,20 +1,35 @@
 import React from 'react';
 import Head from 'next/head';
 import Normalize from './Normalize';
+import Router from 'next/router';
 
 import { primaryColor, grey } from './constants';
 
-const Navbar = props => (
-	<div className="navbar">
-		<Normalize />
-		<div className="nav-item selected">Jeane Carlos</div>
-		<div className="flex-gap" />
-		<div className="nav-item right-margin selected">Hacks</div>
-		<div className="nav-item">About</div>
+const Navbar = ({ name, hacks, about }) => {
+	let nameClasses = name ? 'nav-item selected' : 'nav-item';
+	let aboutClasses = about ? 'nav-item selected' : 'nav-item';
+	let hackClasses = hacks
+		? 'nav-item right-margin selected'
+		: 'nav-item right-margin';
 
-		<Style />
-	</div>
-);
+	return (
+		<div className="navbar">
+			<Normalize />
+			<div className={nameClasses} onClick={() => Router.push('/')}>
+				Jeane Carlos
+			</div>
+			<div className="flex-gap" />
+			<div className={hackClasses} onClick={() => Router.push('/')}>
+				Hacks
+			</div>
+			<div className={aboutClasses} onClick={() => Router.push('/about')}>
+				About
+			</div>
+
+			<Style />
+		</div>
+	);
+};
 
 const Style = () => (
 	<style jsx>{`
@@ -35,8 +50,9 @@ const Style = () => (
 		}
 		.nav-item {
 			color: ${grey};
-			font-size: 1.6em;
+			font-size: 1.4em;
 			font-weight: 700;
+			cursor: pointer;
 		}
 
 		.selected {

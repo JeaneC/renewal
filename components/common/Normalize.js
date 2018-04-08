@@ -8,6 +8,8 @@ const Normalize = props => (
 			<meta charSet="utf-8" />
 		</Head>
 		<style jsx global>{`
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
 			* {
 				box-sizing: border-box;
 				margin: 0;

@@ -2,14 +2,14 @@ import React from 'react';
 
 import Navbar from '../components/common/Navbar';
 import Title from '../components/home/Title';
-import Row from '../components/home/Row';
+import Body from '../components/home/Body';
 
-const mainPage = () => (
+const HomePage = () => (
 	<div>
-		<Navbar />
+		<Navbar name hacks />
 		<Title />
-		<Row />
+		<Body />
 	</div>
 );
 
-export default mainPage;
+export default HomePage;
