@@ -1,21 +1,33 @@
 import React from 'react';
 
-import { primaryColor, darkerGrey } from '../common/constants';
+import { darkerGrey, hackathonTechnologies } from '../common/constants';
+import Medal from './Medal';
+
+
 
 const Card = ({ gradient, title }) => {
 	//I name my styles the same as the title name, which can lead to errors if the title has spaces
 	let styleTitle = title.replace(/\s+/g, '');
 
+	let technologyList = hackathonTechnologies[title]
 	return (
 		<div className="container">
 			<div className={styleTitle}>
+				<div className="card-gap card-medals-container">
+					<Medal text="Second Place Overall" />
+					<Medal text="Mar 29 - Apr 1, 2018" />
+					<Medal text="500+ Hackers"/>
+				</div>
 				<div className="card-title">{title}</div>
+				<div className="card-gap"/>
 			</div>
 			<div className="card-footer">
-				<div className="card-footer-item">Wolfram Mathematica</div>
-				<div className="card-footer-item">Azure Services</div>
-				<div className="card-footer-item">Ionic</div>
-				<div className="card-footer-item">React</div>
+				{technologyList.map(tech => {
+					return (
+						<div className="card-footer-item" key={tech}>{tech}</div>
+					)
+				} )}
+
 			</div>
 			<Style gradient={gradient} title={styleTitle} />
 		</div>
@@ -40,6 +52,7 @@ const Style = ({ gradient, title }) => (
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-direction: column;
 		}
 
 		.card-title {
@@ -57,6 +70,17 @@ const Style = ({ gradient, title }) => (
 			align-items: center;
 			color: ${darkerGrey};
 			padding-left: 5%;
+		}
+
+		.card-medals-container {
+			display: flex;
+			flex-direction: column;
+			color: white;
+			align-self: flex-end;
+		}
+
+		.card-gap {
+			flex: 1;
 		}
 
 		.card-footer-item {
