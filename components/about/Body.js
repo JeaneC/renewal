@@ -36,13 +36,16 @@ const Style = () => (
 		.about-body {
 			height: 60vh;
 			display: flex;
+			flex-wrap: wrap;
 			margin-left: 5%;
 			margin-right: 5%;
 		}
 
 		.about-image-container {
-			flex: 0.7;
+			flex: 0.5;
 			padding: 2% 4% 7% 4%;
+			display: flex;
+			align-items: center;
 		}
 
 		.about-image {
@@ -56,13 +59,12 @@ const Style = () => (
 			flex-direction: column;
 			justify-content: center;
 			padding: 0% 4% 5% 3%;
-			margin-top: 2%;
 		}
 
 		.about-paragraph {
 			color: ${darkerGrey};
 			margin-bottom: 0.5em;
-			font-size: 1.05em;
+			font-size: 1.3rem;
 			line-height: 1.4em;
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 300;
@@ -73,7 +75,46 @@ const Style = () => (
 			font-family: inherit;
 			color: ${primaryColor};
 			font-weight: 600;
+			font-size: 1.05em;
 		}
+
+		/* ----------- Non-Retina Screens ----------- */
+		@media (max-device-width: 1600px) {
+				.about-paragraph {
+					color: ${darkerGrey};
+					margin-bottom: 0.5em;
+					font-size: 1.05em;
+					line-height: 1.4em;
+					font-family: 'Open Sans', sans-serif;
+					font-weight: 300;
+				}
+
+				.about-image-container {
+					flex: 0.7;
+					padding: 2% 4% 7% 4%;
+				}
+
+		}
+
+		/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+		/* Portrait and Landscape */
+		@media (max-device-width: 667px) {
+
+			.about-image-container {
+				flex: 0 0 auto;
+				padding: 2% 4% 7% 4%;
+			}
+
+			.about-paragraph {
+				color: ${darkerGrey};
+				margin-bottom: 0.5em;
+				font-size: 0.8em;
+				margin-top: 0.4rem;
+				line-height: 1.6em;
+				font-family: 'Open Sans', sans-serif;
+		}
+
 	`}</style>
 );
 
