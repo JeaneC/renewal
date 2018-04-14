@@ -49,3 +49,9 @@ export const hackathonTechInfo = {
     "200+ Hackers"
   ]
 };
+
+export const small = "1.125rem";
+export const medium = "1.5rem";
+export const large = "3rem";
+export const xlarge = "4rem";
+export const xxlarge = "8rem";

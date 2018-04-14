@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import Navbar from '../components/common/Navbar';
-import Title from '../components/home/Title';
-import Body from '../components/home/Body';
+import Header from "../components/home/Header";
+import Intro from "../components/home/Intro";
+import Hackathons from "../components/home/Hackathons";
 
 const HomePage = () => (
-	<div>
-		<Navbar name hacks />
-		<Title />
-		<Body />
-	</div>
+  <div>
+    <Header />
+    <Intro />
+    <Hackathons />
+  </div>
 );
 
 export default HomePage;

@@ -1,0 +1,90 @@
+:root {
+  --primaryColor: #f44336;
+
+  --bold: 900;
+
+  --small: 1.125rem;
+  --medium: 1.5rem;
+  --large: 3rem;
+  --xlarge: 4rem;
+  --xxlarge: 8rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Intro Portion CSS  */
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 7.5%;
+  padding-top: 8%;
+}
+
+.intro-name {
+  font-size: var(--xxlarge);
+  font-weight: var(--bold);
+}
+
+.intro-subtitle {
+  font-size: var(--xlarge);
+  font-weight: var(--bold);
+}
+
+.highlight {
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--primaryColor);
+}
+
+/*  Hackathon Portion CSS */
+
+.hackathons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 7.5%;
+  padding-top: 8%;
+  width: 98vw;
+}
+
+.hackathons-header {
+  font-size: var(--xxlarge);
+  font-weight: var(--bold);
+  margin-bottom: 8rem;
+}
+
+.hackathon-hack {
+  margin-bottom: 7rem;
+  width: 38vw;
+}
+
+.hackathon-hack-header {
+  font-size: var(--large);
+  font-weight: var(--bold);
+}
+
+.hackathon-hack-subtitle {
+  font-size: var(--medium);
+  font-weight: var(--bold);
+}
+
+.hackathon-hack-logistics {
+  font-size: var(--small);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.hackathon-hack-description {
+  font-size: var(--small);
+  margin-top: 2rem;
+}
