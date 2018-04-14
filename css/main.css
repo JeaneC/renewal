@@ -171,6 +171,10 @@
     font-size: 2.5rem;
     margin-top: 4rem;
   }
+
+  .intro.container {
+    padding-top: 0%;
+  }
 }
 
 /*  Common End */
@@ -192,7 +196,7 @@
 /*  Hackathon Portion CSS */
 
 .hackathons {
-  margin-top: 8%;
+  margin-top: 4%;
 }
 
 .hackathons-header {
