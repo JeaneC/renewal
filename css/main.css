@@ -5,6 +5,7 @@
 
   --small: 1.125rem;
   --medium: 1.5rem;
+  --medium2: 2rem;
   --large: 3rem;
   --xlarge: 4rem;
   --xxlarge: 8rem;
@@ -18,73 +19,109 @@
   font-size: 16px;
 }
 
-/* Intro Portion CSS  */
-.intro {
-  height: 100vh;
+/*  Common SStart */
+.highlight {
+  font-size: inherit;
+  font-weight: 600;
+  font-style: inherit;
+  color: var(--primaryColor);
+}
+
+.container {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   padding-left: 7.5%;
   padding-top: 8%;
+  width: 96vw;
 }
 
-.intro-name {
+/*  Common End */
+
+/* Intro Start  */
+.intro {
+  height: 100vh;
+  justify-content: center;
+}
+
+.header {
   font-size: var(--xxlarge);
   font-weight: var(--bold);
 }
 
-.intro-subtitle {
+.intro-sub-title {
   font-size: var(--xlarge);
   font-weight: var(--bold);
 }
 
-.highlight {
-  font-size: inherit;
-  font-weight: inherit;
-  color: var(--primaryColor);
+.sub-header {
+  font-size: var(--large);
+  font-weight: var(--bold);
+}
+
+.sub-title {
+  font-size: var(--medium);
+  font-weight: var(--bold);
+}
+
+.logistics {
+  font-size: var(--small);
+  font-style: italic;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+.paragraph {
+  font-size: var(--small);
+  margin-top: 2rem;
+}
+
+.box {
+  margin-bottom: 7rem;
+  width: 38vw;
 }
 
 /*  Hackathon Portion CSS */
 
 .hackathons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 7.5%;
-  padding-top: 8%;
-  width: 98vw;
 }
 
 .hackathons-header {
-  font-size: var(--xxlarge);
-  font-weight: var(--bold);
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
-.hackathon-hack {
+/* Quotes */
+
+.quote-box {
+  align-self: flex-end;
   margin-bottom: 7rem;
-  width: 38vw;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.hackathon-hack-header {
+.quote-mark {
+  font-size: var(--xlarge);
+  font-weight: var(--bold);
+  font-style: italic;
+}
+
+.quote-quote {
+  font-size: var(--large);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.quote-author {
   font-size: var(--large);
   font-weight: var(--bold);
-}
-
-.hackathon-hack-subtitle {
-  font-size: var(--medium);
-  font-weight: var(--bold);
-}
-
-.hackathon-hack-logistics {
-  font-size: var(--small);
   font-style: italic;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.hackathon-hack-description {
-  font-size: var(--small);
-  margin-top: 2rem;
+/*  Experience */
+.experience-header {
+  margin-bottom: 6rem;
 }
