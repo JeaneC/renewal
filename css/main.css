@@ -1,5 +1,6 @@
 :root {
   --primaryColor: #f44336;
+  --blue: #3f51b5;
 
   --bold: 900;
 
@@ -64,6 +65,12 @@
   font-weight: var(--bold);
 }
 
+.techstack {
+  font-size: var(--small);
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
 .logistics {
   font-size: var(--small);
   font-style: italic;
@@ -79,6 +86,20 @@
 .box {
   margin-bottom: 7rem;
   width: 38vw;
+}
+
+.link {
+  color: var(--blue);
+  font-size: var(--small);
+  font-style: underline;
+  font-weight: var(--bold);
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+.bold {
+  font-weight: var(--bold);
+  font-size: inherit;
 }
 
 /*  Hackathon Portion CSS */
