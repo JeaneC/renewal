@@ -53,12 +53,6 @@
   font-weight: var(--bold);
 }
 
-.techstack {
-  font-size: var(--small);
-  margin-top: 0.5rem;
-  font-weight: normal;
-}
-
 .logistics {
   font-size: var(--small);
   font-style: italic;
@@ -76,10 +70,14 @@
   width: 38vw;
 }
 
+.box:last-child {
+  margin-bottom: 4rem;
+}
+
 .link {
+  display: block;
   color: var(--blue);
   font-size: var(--small);
-  font-style: underline;
   font-weight: var(--bold);
   text-decoration: underline;
   margin-top: 2rem;
@@ -133,6 +131,45 @@
 @media (max-device-width: 1250px) {
   .box {
     width: 50vw;
+  }
+}
+
+/* ----------- Common + Phones ----------- */
+@media (max-device-width: 450px) {
+  * {
+    font-size: 5px;
+  }
+
+  .box {
+    margin-bottom: 15rem;
+    width: 86vw;
+  }
+
+  .header {
+    font-size: 9rem;
+  }
+
+  .sub-header {
+    font-size: 4.8rem;
+  }
+
+  .sub-title {
+    font-size: 3rem;
+  }
+
+  .logistics {
+    font-size: 2.5rem;
+  }
+
+  .paragraph {
+    font-size: 2.5rem;
+    text-align: justify;
+    margin-top: 4rem;
+  }
+
+  .link {
+    font-size: 2.5rem;
+    margin-top: 4rem;
   }
 }
 
@@ -193,7 +230,26 @@
   justify-content: flex-end;
 }
 
+/*  Quote Phone */
+@media (max-device-width: 450px) {
+  .quote-box {
+    align-self: center;
+    margin-bottom: 10rem;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*  Quote Phone End */
+
+/*  Quotes End */
+
 /*  Experience */
 .experience-header {
   margin-bottom: 6rem;
+}
+
+.end {
+  margin-bottom: 4rem;
 }
