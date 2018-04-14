@@ -5,6 +5,7 @@
   --bold: 900;
 
   --small: 1.125rem;
+  --small2: 1.25rem;
   --medium: 1.5rem;
   --medium2: 2rem;
   --large: 3rem;
@@ -20,7 +21,7 @@
   font-size: 16px;
 }
 
-/*  Common SStart */
+/*  Common Start */
 .highlight {
   font-size: inherit;
   font-weight: 600;
@@ -37,21 +38,8 @@
   width: 96vw;
 }
 
-/*  Common End */
-
-/* Intro Start  */
-.intro {
-  height: 100vh;
-  justify-content: center;
-}
-
 .header {
   font-size: var(--xxlarge);
-  font-weight: var(--bold);
-}
-
-.intro-sub-title {
-  font-size: var(--xlarge);
   font-weight: var(--bold);
 }
 
@@ -102,9 +90,72 @@
   font-size: inherit;
 }
 
+/* ----------- Common + Laptops ----------- */
+@media (max-device-width: 1700px) {
+  .box {
+    width: 42vw;
+  }
+}
+@media (max-device-width: 1600px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media (max-device-width: 1450px) {
+  * {
+    font-size: 12px;
+  }
+
+  .box {
+    margin-bottom: 7rem;
+  }
+
+  .logistics {
+    font-size: var(--small2);
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-weight: normal;
+  }
+
+  .paragraph {
+    font-size: var(--small2);
+    margin-top: 2rem;
+  }
+}
+
+@media (max-device-width: 1250px) {
+  * {
+    font-size: 11px;
+  }
+}
+
+@media (max-device-width: 1250px) {
+  .box {
+    width: 50vw;
+  }
+}
+
+/*  Common End */
+
+/* Intro Start  */
+
+.intro {
+  height: 100vh;
+  justify-content: center;
+}
+
+.intro-sub-title {
+  font-size: var(--xlarge);
+  font-weight: var(--bold);
+}
+
+/* Intro End  */
+
 /*  Hackathon Portion CSS */
 
 .hackathons {
+  margin-top: 8%;
 }
 
 .hackathons-header {
